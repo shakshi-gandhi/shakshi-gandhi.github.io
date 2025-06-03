@@ -4,19 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Academics – Shakshi Gandhi</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <style>
     body {
-      font-family: 'DM Sans', sans-serif;
+      font-family: 'Inter', sans-serif;
       background: #ffffff;
       color: #393838;
       padding: 2rem;
-      max-width: 720px;
+      max-width: 800px;
       margin: auto;
     }
 
     h1 {
       color: #111318;
+      margin-bottom: 2rem;
     }
 
     nav {
@@ -26,32 +28,69 @@
     nav a {
       margin-right: 1rem;
       text-decoration: none;
-      font-weight: 500;
       color: #111318;
+      font-weight: 500;
     }
 
     .timeline {
-      border-left: 3px solid #111318;
-      padding-left: 1rem;
+      position: relative;
+      margin-left: 1rem;
+      border-left: 4px solid #00ff5e; /* Laser green */
+      padding-left: 2rem;
     }
 
     .entry {
-      margin-bottom: 1.5rem;
+      position: relative;
+      margin-bottom: 2.5rem;
+    }
+
+    .entry::before {
+      content: '';
+      position: absolute;
+      left: -1.3rem;
+      top: 0.3rem;
+      width: 12px;
+      height: 12px;
+      background-color: #00ff5e; /* Laser green dot */
+      border-radius: 50%;
+      box-shadow: 0 0 8px #00ff5e;
     }
 
     .year {
+      font-size: 1.1rem;
       font-weight: bold;
-      margin-bottom: 0.2rem;
+      color: #111318;
     }
 
     .desc {
-      margin-left: 1rem;
+      margin-top: 0.3rem;
     }
+
+    .univ a {
+      text-decoration: none;
+      color: #00a651;
+      font-weight: 500;
+    }
+
+    ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+    }
+
+    .grade {
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    .activities {
+      margin-top: 0.3rem;
+    }
+
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">About</a>
+    <a href="index.html">About Me</a>
+    <a href="work-ex.html">Work Experience</a>
     <a href="projects.html">Projects</a>
     <a href="resume.html">Resume</a>
   </nav>
@@ -61,12 +100,47 @@
   <div class="timeline">
     <div class="entry">
       <div class="year">2024 – 2026</div>
-      <div class="desc">MS in Information Management, University of Washington</div>
+      <div class="desc">
+        <div class="univ">
+          <a href="https://ischool.uw.edu/" target="_blank">University of Washington – MS in Information Management</a>
+        </div>
+        <div class="grade">Grade: 3.7 / 4.0</div>
+        <div><strong>Focus:</strong> Data Science, Business Intelligence</div>
+        <div><strong>Coursework:</strong>
+          <ul>
+            <li>Building and Applying LLMs</li>
+            <li>Data Science I – Theoretical Foundations</li>
+            <li>Data Science II – Machine Learning and Econometrics</li>
+            <li>Data Science III – Scaling Applications and Ethics</li>
+            <li>Relational Database Management Systems</li>
+            <li>Foundations of Information Management</li>
+            <li>Policy and Ethics in Information Management</li>
+            <li>Data Driven Org Problem Solving for IM Professionals</li>
+            <li>Management and Strategic Leadership</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="entry">
       <div class="year">2017 – 2021</div>
-      <div class="desc">B.Tech in Information Technology, University of Mumbai</div>
+      <div class="desc">
+        <div class="univ">
+          <a href="https://kjsce.somaiya.edu.in/en" target="_blank">K. J. Somaiya College of Engineering – B.Tech in Information Technology</a>
+        </div>
+        <div class="grade">Grade: 3.9 / 4.0</div>
+        <div class="activities">Activities: KJSCE Students' Council 2018–2019 – Joint Marketing Secretary</div>
+        <div><strong>Relevant Coursework:</strong>
+          <ul>
+            <li>Data Mining, Big Data Analytics, Advanced Databases</li>
+            <li>Database Management Systems, Software Project Management</li>
+            <li>Web Programming I & II, Object-Oriented Software Engineering</li>
+            <li>Operating Systems, Analysis of Algorithms, Theory of Computers</li>
+            <li>Computer Architecture, Data Communication and Networking</li>
+            <li>Fundamentals of Computer Programming</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </body>
