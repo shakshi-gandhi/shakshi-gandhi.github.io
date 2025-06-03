@@ -4,34 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shakshi Gandhi</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&display=swap" rel="stylesheet"/>
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --bg: #ffffff;
-      --text: #393838;
-      --accent: #8db8ed;
-    }
-
-    [data-theme='dark'] {
-      --bg: #393838;
-      --text: #ffffff;
-      --accent: #8db8ed;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      background-color: #ffffff;
+      color: #393838;
       font-family: 'DM Sans', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      transition: background 0.3s, color 0.3s;
       line-height: 1.6;
       padding: 2rem;
+      margin: 0;
     }
 
     .container {
@@ -42,78 +23,23 @@
     header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
       margin-bottom: 2rem;
     }
 
     nav a {
-      margin: 0 1rem;
+      margin-left: 1rem;
       text-decoration: none;
-      color: var(--text);
-      font-weight: 600;
-      border-bottom: 2px solid transparent;
-      transition: border 0.2s;
-    }
-
-    nav a:hover {
-      border-bottom: 2px solid var(--accent);
-    }
-
-    .toggle-btn {
-      background: none;
-      border: 1px solid var(--accent);
-      padding: 0.3rem 0.8rem;
-      border-radius: 5px;
-      color: var(--accent);
-      cursor: pointer;
-      font-size: 0.9rem;
-    }
-
-    section {
-      margin: 2rem 0;
-    }
-
-    h1, h2 {
-      color: var(--accent);
-      margin-bottom: 0.6rem;
-      font-weight: 600;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .project {
-      padding: 1rem 0;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .reach-out {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.4rem;
-      background-color: var(--accent);
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      font-size: 0.85rem;
-      opacity: 0.6;
+      color: #111318;
+      font-weight: 500;
     }
 
     .profile-pic {
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 1rem;
-      border: 3px solid var(--accent);
+      border: 2px solid #111318;
     }
 
     .center {
@@ -122,93 +48,51 @@
       align-items: center;
       text-align: center;
     }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      text-align: left;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+      color: #111318;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      opacity: 0.6;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
+      <div><strong>Shakshi Gandhi</strong></div>
       <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="academics.html">Academics</a>
+        <a href="resume.html">Resume</a>
       </nav>
-      <button class="toggle-btn" onclick="toggleTheme()">Toggle Theme</button>
     </header>
 
-    <section id="about" class="center" data-aos="fade-up">
+    <section class="left">
       <img src="https://via.placeholder.com/150" alt="Shakshi Gandhi" class="profile-pic" />
       <h1>About Me</h1>
       <p>I am Shakshi Gandhi, a data professional with ~3 years' experience across ZS, Oracle, and Colgate.</p>
-      <p></p>
-      <p> I have worked across analytics, data science, consulting, and business insights, and what’s always excited me most is figuring out the <i>why</i> behind the numbers.</p>
-      <p></p>
-      <p>Across projects, I’ve found joy not just in building solutions, but in understanding why something didn’t work the first time. Whether it was optimizing $650MM in budget forecasts at ZS or rebuilding processes at Oracle, I have learned that real impact often comes from digging into the messy middle - asking questions, brainstorming, and not being afraid to start over if needed.
-</p>
-<p></p>
-      <p>Now, as a graduate student at the University of Washington, I’m looking to contribute to a team that values thoughtful problem-solving and uses data to tell clear, meaningful stories. I would love to explore how I could bring that mindset to your team.
-</p>
-        <p></p>
-        <p>If there’s a spot on your team, I would appreciate the chance to share how I might be helpful.
-</p>
-<p></p>
-        <p>When I’m not working, you can find me trying to cook something new.</p>
+      <p>I have worked across analytics, data science, consulting, and business insights, and what’s always excited me most is figuring out the <i>why</i> behind the numbers.</p>
+      <p>I’ve found joy not just in building solutions, but in understanding why something didn’t work. Real impact often comes from asking questions, brainstorming, and starting over if needed.</p>
+      <p>Now, as a graduate student at the University of Washington, I’m excited to contribute to a team that values thoughtful problem-solving and data storytelling.</p>
+      <p>When I’m not working, you can find me trying to cook something new.</p>
     </section>
-
-    <section id="projects" data-aos="fade-up">
-      <h2>Projects</h2>
-
-      <div class="project" data-aos="fade-up" data-aos-delay="100">
-        <strong>Marketing Mix Modeling</strong>
-        <p>Used Bayesian regression to optimize pharma investments. <a href="https://en.wikipedia.org/wiki/Marketing_mix_modeling" target="_blank">Wikipedia</a></p>
-      </div>
-
-      <div class="project" data-aos="fade-up" data-aos-delay="150">
-        <strong>Text Normalization for Speech</strong>
-        <p>Built ML models to improve automatic speech recognition. <a href="https://en.wikipedia.org/wiki/Text_normalization" target="_blank">Wikipedia</a></p>
-      </div>
-
-      <div class="project" data-aos="fade-up" data-aos-delay="200">
-        <strong>Movie Ratings Prediction</strong>
-        <p>Predicted ratings using regression and classification models. <a href="https://en.wikipedia.org/wiki/MovieLens" target="_blank">Wikipedia</a></p>
-      </div>
-
-      <div class="project" data-aos="fade-up" data-aos-delay="250">
-        <strong>Electricity Demand Forecasting</strong>
-        <p>Forecasted city-level electricity demand using XGBoost. <a href="https://en.wikipedia.org/wiki/Load_forecasting" target="_blank">Wikipedia</a></p>
-      </div>
-    </section>
-
-    <section id="resume" data-aos="fade-up">
-      <h2>Resume</h2>
-      <p><a href="Shakshi%20Gandhi%20-%20Resume.pdf" target="_blank">Download Resume (PDF)</a></p>
-    </section>
-
-    <div class="center">
-      <a href="mailto:shakshigandhi.a@gmail.com" class="reach-out" data-aos="fade-up">Reach Out</a>
-    </div>
 
     <footer>
       &copy; 2025 Shakshi Gandhi
     </footer>
   </div>
-
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 700, once: true });
-
-    function toggleTheme() {
-      const current = document.documentElement.getAttribute("data-theme");
-      document.documentElement.setAttribute(
-        "data-theme",
-        current === "dark" ? "light" : "dark"
-      );
-    }
-
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
-  </script>
 </body>
 </html>
