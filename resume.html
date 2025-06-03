@@ -40,19 +40,19 @@
     }
 
     .toggle-buttons button {
-      background-color: #a6c7f9;
+      /*background-color: #c0d4f2;*/
       color: #202226;
       border: none;
       padding: 0.2rem 0.5rem;
-      margin-right: 0.2rem;
-      font-size: 0.8rem;
+      margin-right: 0rem;
+      font-size: 1rem;
       /*border-radius: 6px;*/
       cursor: pointer;
       transition: background-color 0.2s;
     }
 
     .toggle-buttons button:hover {
-      background-color: #a6c7f9;
+      background-color: #c0d4f2;
       text-decoration: underline;
     }
 
@@ -102,15 +102,14 @@
   </nav>
 
   <div class="toggle-buttons">
-    <button onclick="showPDF('resume')">View Resume /</button>
+    <p><strong>View:</strong>
+    <button onclick="showPDF('resume')">Resume</button>
+    /
     <button onclick="showPDF('cover')">Cover Letter</button>
-  </div>
+    </p> 
+    </div>
 
   <iframe id="pdf-frame" class="pdf-viewer" src="Shakshi Gandhi - Resume.pdf"></iframe>
-
-    <section class="contact">
-  <p><bold><a href="https://www.linkedin.com/in/shakshigandhi" target="_blank">LinkedIn</a></bold>/</bold><a href="mailto:shakshigandhi.a@gmail.com" target="_blank">Mail</a></bold></p>
-</section>
 
   <script>
     function showPDF(type) {
