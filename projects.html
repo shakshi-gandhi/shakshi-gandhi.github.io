@@ -4,61 +4,148 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects – Shakshi Gandhi</title>
-  <!-- <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap" rel="stylesheet" />
--->
-   <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      background: #ffffff;
+      background-color: #ffffff;
       color: #393838;
-      padding: 2rem;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.5;
+      margin: 0;
+      padding: 1rem;
       max-width: 720px;
       margin: auto;
     }
 
-    h1 {
-      color: #111318;
-    }
-
-    .project {
-      margin-bottom: 1.5rem;
-    }
-
-    a {
-      color: #111318;
-    }
-
     nav {
-      margin-bottom: 2rem;
+      margin-bottom: 1.3rem;
     }
 
     nav a {
       margin-right: 1rem;
       text-decoration: none;
-      font-weight: 500;
       color: #111318;
+      font-weight: 400;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      color: #111318;
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .project {
+      margin-bottom: 2rem;
+    }
+
+    .project-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      text-decoration: none;
+      color: #3f3c88;
+      cursor: pointer;
+    }
+
+    .project-title:hover {
+      background-color: yellow;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      margin-top: 0.3rem;
+      color: #393838;
+    }
+
+    .contact {
+      font-size: 0.8rem;
+      margin-top: 2rem;
+    }
+
+    .contact a {
+      color: #18181c;
+      font-weight: 300;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      text-decoration: none;
+      margin-right: 0.5rem;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 1rem;
+      opacity: 0.6;
     }
   </style>
 </head>
 <body>
+
   <nav>
-    <a href="index.html">About</a>
+    <a href="index.html">About Me</a>
     <a href="academics.html">Academics</a>
+    <a href="work-ex.html">Work Experience</a>
+    <a href="projects.html">Projects</a>
     <a href="resume.html">Resume</a>
   </nav>
 
   <h1>Projects</h1>
 
   <div class="project">
-    <h3>📊 Tableau Dashboard: Sales Insights</h3>
-    <p>Built a sales performance dashboard for real-time decision-making. <a href="#" target="_blank">[View Placeholder]</a></p>
+    <a href="https://your-tableau-project-link.com" class="project-title" target="_blank" rel="noopener noreferrer">Tableau Dashboard Project (Placeholder)</a>
+    <p class="description">
+      Interactive Tableau dashboard demonstrating key insights and data visualization skills. (Link placeholder)
+    </p>
   </div>
 
   <div class="project">
-    <h3>🧪 Placeholder Project</h3>
-    <p>Coming soon.</p>
+    <a href="#" class="project-title" tabindex="0">Text Normalization with Machine Learning</a>
+    <p class="description">
+      Developed a machine learning-based text normalization system for automatic speech recognition. Implemented Random Forest with TF-IDF achieving 98.21% class prediction accuracy. Enhanced with Word2Vec and Neural Networks, increasing contextual accuracy to 84.87%.
+    </p>
   </div>
+
+  <div class="project">
+    <a href="#" class="project-title" tabindex="0">Movie Ratings Analysis and Predictive Modeling</a>
+    <p class="description">
+      Built an analytical framework analyzing 100K+ movie ratings using Python. Engineered data pipelines and predicted ratings with regression models, achieving 70% precision and 60% recall.
+    </p>
+  </div>
+
+  <div class="project">
+    <a href="#" class="project-title" tabindex="0">Electricity Demand and Price Forecasting</a>
+    <p class="description">
+      Developed time series forecasting models with XGBoost to predict electricity demand and pricing. Improved load management by reducing demand-supply mismatches by 12%.
+    </p>
+  </div>
+
+  <div class="project">
+    <a href="#" class="project-title" tabindex="0">Customer Segmentation and Targeting for Retail</a>
+    <p class="description">
+      Segmented 15,000+ consumers into 5 groups using SQL and Excel, based on behavior and demographics. Recommended marketing strategies by analyzing promotions and media channels.
+    </p>
+  </div>
+
+  <div class="project">
+    <a href="#" class="project-title" tabindex="0">Automated Shopping and Wi-Fi Based Indoor Navigation Android App</a>
+    <p class="description">
+      Developed an Android app using Dijkstra’s Algorithm for real-time shortest path optimization. Features include mask detection, human traffic control, and barcode scanner. Published IEEE paper in 2021 Convergence in Technology conference.
+    </p>
+  </div>
+
 </body>
 </html>
