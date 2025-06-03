@@ -19,29 +19,31 @@
     h1 {
       color: #111318;
       margin-bottom: 2rem;
+      font-size: 1.8rem;
     }
 
     nav {
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     nav a {
-      margin-right: 1rem;
+      margin-right: 1.2rem;
       text-decoration: none;
-      color: #242736;
-      font-weight: 300;
+      color: #111318;
+      font-weight: 500;
+      font-size: 0.95rem;
     }
 
     .timeline {
       position: relative;
       margin-left: 1rem;
-      border-left: 4px solid #242736; /* Laser green */
+      border-left: 4px solid #00c773; /* Laser green */
       padding-left: 2rem;
     }
 
     .entry {
       position: relative;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2.8rem;
     }
 
     .entry::before {
@@ -51,45 +53,59 @@
       top: 0.3rem;
       width: 12px;
       height: 12px;
-      background-color: #242736; /* Laser green dot */
+      background-color: #00c773;
       border-radius: 50%;
-      box-shadow: 0 0 8px #242736;
+      box-shadow: 0 0 8px #00c773;
     }
 
     .year {
-      font-size: 0.9rem;
-      /*font-weight: bold;*/
+      font-size: 0.95rem;
       color: #242736;
+      font-weight: 500;
+      margin-bottom: 0.3rem;
     }
 
     .desc {
-      margin-top: 0.3rem;
+      margin-top: 0.2rem;
+      font-size: 0.92rem;
     }
 
     .univ a {
       text-decoration: none;
-      color: #242736;
-      font-weight: 300;
+      color: #4aa9ff;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .univ a:hover {
+      text-decoration: underline;
+    }
+
+    .grade {
+      margin-top: 0.4rem;
+      font-style: italic;
+      color: #444;
+    }
+
+    .activities {
+      margin-top: 0.4rem;
+      font-style: italic;
     }
 
     ul {
       margin: 0.5rem 0 1rem 1.5rem;
-      font-size: 0.8rem;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      padding-left: 1.2rem;
     }
 
-    .grade {
-      margin-top: 0.5rem;
-      font-style: italic;
+    strong {
+      font-weight: 600;
     }
-
-    .activities {
-      margin-top: 0.3rem;
-    }
-
   </style>
 </head>
 <body>
-  <nav>
+  <nav class="nav-bar">
     <a href="index.html">About Me</a>
     <a href="work-ex.html">Work Experience</a>
     <a href="projects.html">Projects</a>
