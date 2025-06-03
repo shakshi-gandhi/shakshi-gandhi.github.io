@@ -1,21 +1,171 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Simple HTML Document</title>
-    <h1>Welcome to My Simple HTML Document</h1>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shakshi Gandhi Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --accent: #6366f1;
+    }
+
+    [data-theme='dark'] {
+      --bg: #0f172a;
+      --text: #f1f5f9;
+      --accent: #a78bfa;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 2rem;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .toggle-btn {
+      background: none;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h1, h2 {
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+
+    .project {
+      border: 1px solid var(--accent);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .reach-out {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
 </head>
 <body>
-    <p>This is a basic HTML document structure with a title and a paragraph.</p>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+    </nav>
+    <button class="toggle-btn" onclick="toggleTheme()">Toggle Theme</button>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <h1>About Me</h1>
+    <p>
+      I am <strong>Shakshi Gandhi</strong> – a curious, detail-driven data professional with hands-on experience at ZS, Oracle, and Colgate. 
+      I’ve worked across analytics, data science, consulting, and business insights, and what’s always excited me most is figuring out the why behind the numbers.
+    </p>
+    <p>
+      Across projects, I’ve found joy not just in building solutions, but in understanding why something didn’t work the first time. Whether optimizing $650MM in budget forecasts at ZS or rebuilding processes at Oracle, I’ve learned that real impact often comes from digging into the messy middle — asking questions, brainstorming, and not being afraid to start over.
+    </p>
+    <p>
+      Now, as a graduate student at the University of Washington, I’m looking to contribute to a team that values thoughtful problem-solving and uses data to tell meaningful stories.
+    </p>
+  </section>
+
+  <section id="projects" data-aos="fade-up" data-aos-delay="200">
+    <h2>Projects</h2>
+    <div class="project" data-aos="zoom-in" data-aos-delay="300">
+      <strong>Marketing Mix Modeling</strong>
+      <p>Used Bayesian Regression to optimize pharma marketing channels. <a href="https://en.wikipedia.org/wiki/Marketing_mix_modeling" target="_blank">Learn more</a></p>
+    </div>
+    <div class="project" data-aos="zoom-in" data-aos-delay="400">
+      <strong>Text Normalization for Speech</strong>
+      <p>Improved ASR with ML models. <a href="https://en.wikipedia.org/wiki/Text_normalization" target="_blank">Learn more</a></p>
+    </div>
+    <div class="project" data-aos="zoom-in" data-aos-delay="500">
+      <strong>Movie Ratings Prediction</strong>
+      <p>Built ML models to predict movie ratings. <a href="https://en.wikipedia.org/wiki/MovieLens" target="_blank">Learn more</a></p>
+    </div>
+    <div class="project" data-aos="zoom-in" data-aos-delay="600">
+      <strong>Electricity Demand Forecasting</strong>
+      <p>Used XGBoost to forecast usage trends. <a href="https://en.wikipedia.org/wiki/Load_forecasting" target="_blank">Learn more</a></p>
+    </div>
+  </section>
+
+  <section id="resume" data-aos="fade-up">
+    <h2>Resume</h2>
+    <p>Download my resume <a href="Shakshi%20Gandhi%20-%20Resume.pdf" target="_blank">here</a>.</p>
+  </section>
+
+  <a href="mailto:shakshigandhi.a@gmail.com" class="reach-out" data-aos="fade-up">
+    Reach Out
+  </a>
+
+  <footer>
+    &copy; 2025 Shakshi Gandhi
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute("data-theme");
+      document.documentElement.setAttribute(
+        "data-theme",
+        current === "dark" ? "light" : "dark"
+      );
+    }
+
+    // Load dark mode by default if preferred
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  </script>
+</body>
 </html>
