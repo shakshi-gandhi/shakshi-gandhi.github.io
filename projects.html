@@ -43,20 +43,38 @@
       margin-bottom: 2rem;
     }
 
-    .project-title {
+    /* Style for clickable project titles */
+    .project-title-link {
       font-weight: 600;
       font-size: 1.1rem;
       padding: 0.2rem 0.4rem;
       border-radius: 3px;
       transition: background-color 0.3s ease;
       display: inline-block;
-      text-decoration: none;
-      color: #cb830e;
+      color: #9d330a;
+      text-decoration: underline; /* underline always for real links */
+      cursor: pointer;
+    }
+    .project-title-link:hover {
+      background-color: #f3d1c4;
+      color: #9d330a;
+      text-decoration: underline;
     }
 
+    /* Style for non-clickable project titles */
+    .project-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      display: inline-block;
+      color: #9d330a;
+      text-decoration: none; /* no underline */
+      cursor: default;
+    }
     .project-title:hover {
-      background-color: rgb(242, 214, 166);
-      color: #000;
+      background-color: #f3d1c4;
+      color: #9d330a;
       text-decoration: none;
     }
 
@@ -105,42 +123,42 @@
   <h1>Projects</h1>
 
   <div class="project">
-    <a href="https://your-tableau-project-link.com" class="project-title" target="_blank" rel="noopener noreferrer">Tableau Dashboard Project (Placeholder)</a>
+    <a href="https://your-tableau-project-link.com" class="project-title-link" target="_blank" rel="noopener noreferrer">Tableau Dashboard Project (Placeholder)</a>
     <p class="description">
       Interactive Tableau dashboard demonstrating key insights and data visualization skills. (Link placeholder)
     </p>
   </div>
 
   <div class="project">
-    <a href="#" class="project-title" tabindex="0">Text Normalization with Machine Learning</a>
+    <span class="project-title" tabindex="0">Text Normalization with Machine Learning</span>
     <p class="description">
       Developed a machine learning-based text normalization system for automatic speech recognition. Implemented Random Forest with TF-IDF achieving 98.21% class prediction accuracy. Enhanced with Word2Vec and Neural Networks, increasing contextual accuracy to 84.87%.
     </p>
   </div>
 
   <div class="project">
-    <a href="#" class="project-title" tabindex="0">Movie Ratings Analysis and Predictive Modeling</a>
+    <span class="project-title" tabindex="0">Movie Ratings Analysis and Predictive Modeling</span>
     <p class="description">
       Built an analytical framework analyzing 100K+ movie ratings using Python. Engineered data pipelines and predicted ratings with regression models, achieving 70% precision and 60% recall.
     </p>
   </div>
 
   <div class="project">
-    <a href="#" class="project-title" tabindex="0">Electricity Demand and Price Forecasting</a>
+    <span class="project-title" tabindex="0">Electricity Demand and Price Forecasting</span>
     <p class="description">
       Developed time series forecasting models with XGBoost to predict electricity demand and pricing. Improved load management by reducing demand-supply mismatches by 12%.
     </p>
   </div>
 
   <div class="project">
-    <a href="#" class="project-title" tabindex="0">Customer Segmentation and Targeting for Retail</a>
+    <span class="project-title" tabindex="0">Customer Segmentation and Targeting for Retail</span>
     <p class="description">
       Segmented 15,000+ consumers into 5 groups using SQL and Excel, based on behavior and demographics. Recommended marketing strategies by analyzing promotions and media channels.
     </p>
   </div>
 
   <div class="project">
-    <a href="#" class="project-title" tabindex="0">Automated Shopping and Wi-Fi Based Indoor Navigation Android App</a>
+    <span class="project-title" tabindex="0">Automated Shopping and Wi-Fi Based Indoor Navigation Android App</span>
     <p class="description">
       Developed an Android app using Dijkstra’s Algorithm for real-time shortest path optimization. Features include mask detection, human traffic control, and barcode scanner. Published IEEE paper in 2021 Convergence in Technology conference.
     </p>
